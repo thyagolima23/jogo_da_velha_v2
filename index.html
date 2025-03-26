@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Velha</title>
-    <link href="style.css" rel="stylesheet">
+<html lang="pt-br"><!--tag de idioma-->
+<head><!--cabeçalho de configuração para ferramenta de busca-->
+    <meta charset="UTF-8"><!--padrão para reconhecer caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--compatibilidade de dispositivos-->
+    <title>Jogo da Velha</title><!--Adicionar título na aba do navegador-->
+    <link href="style.css" rel="stylesheet"><!--Associar o arquivo do css ao html-->
     
-</head>
-<body>
-    <h1>Jogo da Velha</h1>
+</head><!--final da head-->
+<body><!--Corpo da página-->
+    <header><!--cabeçalho da página onde fica o menu e coisas semelhantes-->
+        <h1>Jogo da Velha</h1><!--título principal da página-->
 
-    <div class="placar">
-        <p>Jogador 1 (X): <span id="placar-jogador1">0</span></p>
-        <p>Jogador 2 (O): <span id="placar-jogador2">0</span></p>
-    </div>
+        <div class="placar"><!--criar divisões na página, pode conter atributos Ex: class, id, style, etc...-->
+            <p>Jogador 1 (X): <span id="placar-jogador1">0</span></p><!--parágrafo do texto com quebra-->
+            <p>Jogador 2 (O): <span id="placar-jogador2">0</span></p><!--span é uma linha de texto qualquer sem quebra-->
+        </div><!--fechamento da div-->
 
-    <div class="tabuleiro">
+    </header><!--fechamento da header-->
+    
+
+    <main class="tabuleiro"><!--tag onde ficará o conteúdo principal da página-->
         <!-- Botões para o tabuleiro -->
-        <button data-pos="0"></button>
+        <button data-pos="0"></button><!--botão com atributo de posição-->
         <button data-pos="1"></button>
         <button data-pos="2"></button>
         <button data-pos="3"></button>
@@ -26,10 +30,11 @@
         <button data-pos="6"></button>
         <button data-pos="7"></button>
         <button data-pos="8"></button>
-    </div>
-
+    </main><!--fechamento da main-->
+<footer><!--rodapé da página onde colocam outras informações-->
     <button id="reiniciar">Reiniciar Jogo</button>
+</footer><!--fechamento da footer-->
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <script src="script.js"></script><!--Associa e executa o js ao html-->
+</body><!--fechamento do corpo da página-->
+</html><!--fechamento da html-->
